@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/materialize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/aos/aos.css">  
   <link rel="stylesheet" href="assets/css/mystyle.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#project-section">Project</a></li>
         <li><a href="#footer">Contact</a></li>
-        <li><a href="#skills-section" class="waves-effect waves-light btn btn-cta z-depth-0">See More</a></li>
+        <li><a href="#skills-section" class="waves-effect waves-light btn btn-cta z-depth-0">Let's Go</a></li>
       </ul>
     </div>
   </nav>
@@ -31,7 +31,7 @@
     <li><a class="sidenav-close" href="#home">Home</a></li>
     <li><a class="sidenav-close" href="#project-section">Project</a></li>
     <li><a class="sidenav-close" href="#footer">Contact</a></li>
-    <li><a href="#skills-section" class="waves-effect waves-light btn btn-cta z-depth-0 sidenav-close">See More</a></li>
+    <li><a href="#skills-section" class="waves-effect waves-light btn btn-cta z-depth-0 sidenav-close">Let's Go</a></li>
   </ul>
 
   <div class="items">
@@ -50,8 +50,12 @@
         praesentium ipsum vitae dolore. Soluta sit nulla cupiditate? Dolores, nostrum <br>
         exercitationem?</p>
       <div class="hero-section-button">
-        <button class="btn-large waves-effect waves-light z-depth-0 btn-cta"><a class="white-text" href="#skills-section">See More</a></button>
-        <button class="btn-large waves-effect waves-light z-depth-0 btn-secondary disabled black-text">Get CV</button>
+        <a class="white-text" href="#skills-section">
+          <button class="btn-large waves-effect waves-light z-depth-0 btn-cta">Let's Go</button>
+        </a>
+        <a href="files/CV MUHAMAD APRI - 4 NOV 2020.pdf">
+          <button class="btn-large waves-effect waves-light z-depth-0 btn-secondary black-text">Get CV</button>
+        </a>
       </div>
     </div>
   </section>
@@ -60,7 +64,11 @@
   <section id="skills-section">
     <h3>What I Can Do</h3>
     <p>My skills and my passion</p>
-    <div class="container row">
+    <div class="container row" 
+    data-aos="zoom-in" 
+    data-aos-anchor-placement="bottom-bottom"
+    data-aos-duration="1000"
+    >
       <div class="col s6 m4 l2">
         <img src="assets/images/lecturer.svg" alt="lecturer" style="background-color: #FEC576;" class="skills-box">
         <h6>lecturer</h6>
@@ -97,7 +105,10 @@
   <section id="project-section">
     <h3>My Project</h3>
     <p>Here are some projects that I worked on before</p>
-    <div class="container row">
+    <div class="container row"
+    data-aos="zoom-in" 
+    data-aos-duration="1000"
+    >
       <div class="col s12 m3">
         <div class="card z-depth-0">
           <div class="card-image">
@@ -182,11 +193,16 @@
         </div>
       </div>
     </div>
-    <button class="btn waves-light btn-large z-depth-0 main-color-text">More Project</button>
+    <href href="https://dribbble.com/abgvin" target="_blank">
+      <button class="btn waves-light btn-large z-depth-0 main-color-text">More Project on dribbble</button>
+    </href>
   </section>
 
   <footer id="footer">
-    <div class="container">
+    <div class="container" 
+    data-aos="fade-right"
+    data-aos-duration="1200"
+    >
       <h4>Let’s Work Together</h4>
       <p>
         Abgvin is an Indonesian who is interested in web design and web <br>
@@ -221,6 +237,7 @@
 
 
   <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/aos/aos.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

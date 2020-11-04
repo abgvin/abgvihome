@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
   M.Sidenav.init(sideNavElement, {
     'edge': 'right',
   });
+  
+  AOS.init();
 });
+
 
 mybutton = document.getElementById("myBtn");
 
